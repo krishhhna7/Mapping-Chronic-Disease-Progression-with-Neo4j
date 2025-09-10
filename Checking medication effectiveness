@@ -1,0 +1,3 @@
+MATCH (d:Disease {name:"Hypertension"})-[:RESPONDS_TO]->(m:Medication)<-[:TAKES]-(p:Patient)
+RETURN m.name, count(p) AS patientsHelped
+ORDER BY patientsHelped DESC;
