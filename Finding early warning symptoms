@@ -1,0 +1,4 @@
+MATCH (s:Symptom)<-[:HAS_SYMPTOM]-(p:Patient)-[:DIAGNOSED_WITH]->(d:Disease {name:"Diabetes"})
+RETURN s.name, count(p) AS patients
+ORDER BY patients DESC
+LIMIT 5;
