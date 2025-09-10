@@ -1,0 +1,10 @@
+My main project was about predicting chronic diseases with SVM and Logistic Regression.
+Neo4j helped me generate graph-based features like:
+
+Number of co-occurring symptoms before diagnosis
+
+Shortest path between lifestyle factors and diseases
+
+Shared progression patterns among similar patients
+
+These features improved the explainability of my ML models. Instead of just numbers, I could trace paths in the graph that explained why a patient was flagged at risk.
